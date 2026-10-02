@@ -9,5 +9,8 @@ helloWorld: helloWorld.o
 helloWorld.o: helloWorld.cpp
 		${CXX} -c helloWorld.cpp
 
+lab01Test: lab01Test.o tddFuncs.o arrayFuncs.o
+		${CXX} lab01Test.o tddFuncs.o arrayFuncs.o -o lab01Test
+
 clean:
 		/bin/rm -f *.o helloWorld
