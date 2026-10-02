@@ -8,3 +8,6 @@ helloWorld: helloWorld.o
 
 helloWorld.o: helloWorld.cpp
 		${CXX} -c helloWorld.cpp
+
+clean:
+		/bin/rm -f *.o helloWorld
