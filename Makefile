@@ -14,3 +14,4 @@ lab01Test: lab01Test.o tddFuncs.o arrayFuncs.o
 
 clean:
 		/bin/rm -f *.o helloWorld
+		/bin/rm -f *.o helloWorld lab01Test
